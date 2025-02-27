@@ -7,8 +7,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--secondary-color);
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   min-height: 100vh;
 }
 
@@ -35,7 +35,7 @@ header {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
   padding: 20px 50px;
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -44,7 +44,7 @@ header {
   font-family: "Alfa Slab One", serif;
   font-size: 32px;
   color: var(--primary-text-color);
-  display: flex;
+  // display: flex;
   align-items: center;
   margin: 0 40px;
 
@@ -67,12 +67,12 @@ header {
 }
 
 .hero {
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh;
-  background-color: var(--primary-color);
-  overflow-x: hidden;
+  height: 80vh;
+  background-color: var(--secondary-color);
+  // overflow-x: hidden;
   padding: 0 20px;
 
   .explore-more {
@@ -83,7 +83,7 @@ header {
 }
 
 .hero img {  
-  mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.01));
+  mask-image: linear-gradient(rgba(0,0,0,0.01), rgba(0,0,0,1), rgba(0,0,0,0.01));
 }
 
 .location {
@@ -117,19 +117,30 @@ header {
   text-align: center;
 }
 
+.manifesto {  
+  font-family: var(--header-font-family);
+  color: var(--primary-text-color);
+  width: 80%;
+  bottom: 0%;    
+  font-size: 1.2vw;
+  padding: 10px 10px;  
+  text-align: left;
+  z-index: 1;
+}
+
 .headline {
   font-size: 3vw;
   font-weight: 600;
 }
 
 .contact-action {
-  font-size: 1vw;  
+  font-size: 1.5vw;  
 }
 
 main {
-  display: flex;
+  //display: flex;
   padding: 50px 100px;
-  flex-grow: 1;
+  // flex-grow: 1;
 
   .toc {
     max-width: 260px;
@@ -178,8 +189,8 @@ main {
 
 footer {
   padding: 50px;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #202020;
@@ -193,7 +204,8 @@ footer {
 
 @media screen and (min-width: 1280px) {
   .content {
-    max-width: 60%;
+    max-width: 90%;
+    align-items: center;
     min-width: 800px;
   }
 }
@@ -239,8 +251,8 @@ footer {
 
   main {
     padding: 30px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
   }
 
   .sidebar {
